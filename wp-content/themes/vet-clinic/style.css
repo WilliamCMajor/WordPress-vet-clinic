@@ -1,0 +1,813 @@
+/* 
+Theme Name: Vet Clinic
+Theme URI: http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-admin/themes.php
+Author: Siqing He
+Author URI: http://she8.dmitstudent.ca
+Description: Vet Clinic WordPress Site Build
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vetclinic-siqing
+*/
+
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+
+body {
+    margin: 0;
+    padding: 2%;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.8rem;
+    color: #1e1e1e;
+
+}
+
+/** TYPOGRAPHY **/
+
+h1 {
+    color: #fafafa;
+    padding: 2rem;
+}
+
+h1,h2,h3 {
+    font-weight: 300;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/*** structual styling // general ***/
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+}
+
+.our-story-banner,
+.contact-us-banner,
+.loving-paws-blog-header,
+.categories-banner,
+.archives-banner,
+.error-404-banner,
+.search-result-banner {
+    width: 100%;
+    position: relative;
+}
+
+.our-story-banner h1,
+.contact-us-banner h1,
+.loving-paws-blog-header h1,
+.categories-banner h1,
+.archives-banner h1,
+.search-result-banner h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-shadow {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(58, 51, 53, 0.5);
+    position: absolute;
+    bottom: 0;
+}
+
+.blue-bar {
+    width: 5rem;
+    height: 0.3rem;
+    background: #414f76;
+    margin: 0 auto 2.4rem;
+}
+
+button {
+    border: none;
+}
+
+button.schedule-appointment {
+    background-color: #cc621b;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+}
+
+.home-our-story,
+.home-paws-blog,
+.paws-blog-sub-container,
+.came-to-be,
+.animals-we-care-for {
+    width: 100%;
+    background: #fff5ea;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+    
+.left-col {
+    background: #fff5ea;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-our-story .left-col,
+.paws-blog-sub-container,
+.came-to-be .left-col,
+.animals-we-care-for .right-col {
+    padding: 5%;
+}
+
+.home-paws-blog-container h2 {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.paws-blog-sub-container h3,
+.paws-blog-sub-container p,
+.came-to-be p,
+.animals-we-care-for p,
+.contact-us-container p {
+    margin-bottom: 2.4rem;
+}
+    
+.hidden {
+    visibility: hidden;
+}
+
+.animals-we-care-for h2,
+.came-to-be h2,
+.contact-us-header h2,
+.single-blog-header h2,
+.archives-column h2 {
+    color: #cc621b;
+    text-transform: uppercase;
+}
+
+/******* Our story blog page *******/
+
+.animals-we-care-for .blue-bar,
+.came-to-be .blue-bar,
+.contact-us-header .blue-bar {
+    margin-left: 0;
+}
+
+.animals-we-care-for span {
+    font-weight: 700;
+    color: #65e6f7;
+}
+
+/******** Contact Us Page **********/
+.contact-us-header {
+    margin: 5% 5% 2.4rem;
+}
+.contact-us-container,
+.contact-hours-container {
+    display: flex;
+}
+
+.contact-hours-container {
+    justify-content: space-between;
+}
+
+.contact-hours-container button.blue-book-button {
+    margin-top: 2.4rem;
+}
+
+.contact-hours-container h3 {
+    color: #414f76;
+    margin-bottom: 2.4rem;
+}
+
+.contact-us-container input,
+.contact-us-container select,
+.contact-us-container textarea {
+    width: 90%;
+    border: solid 3px #cc621b;
+    border-radius: 3px; 
+}
+
+::placeholder {
+    color: #cc621b;
+}
+
+/******** Loving Paws blog page *********/
+.blog-container {
+    position: relative
+}
+
+.blog-content {
+    width: 80%;
+    position: absolute;
+    left: 0;
+}
+
+.blog-rightside-bar {
+    height: 200vh;
+    background-color: #cc621b;
+    margin-top: 5%;
+    position: absolute;
+    right: 0;
+}
+
+.blog-bottom-bar {
+    background: #2de1fc;
+    position: absolute;
+}
+
+.loving-paws-content-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loving-paws-blog-box {
+    background-color: #fff5ea;
+}
+
+.loving-paws-blog-box img {
+    margin-bottom: 2.4rem;
+}
+
+.loving-paws-blog-box ul,
+.loving-paws-blog-box h2 {
+    padding: 0 5%;
+}
+
+.loving-paws-blog-box h2 {
+    color: #414f76;;
+}
+
+.loving-paws-blog-box li {
+    list-style: none;
+}
+
+.loving-paws-blog-box li:nth-child(2) {
+    color: #d7875b;
+    margin-bottom: 2.4rem;
+}
+
+.loving-paws-blog-box li:nth-child(3) {
+    margin-bottom: 2.4rem;
+}
+
+.loving-paws-blog-box li:last-child {
+    color: #cc621b;
+}
+
+/******  Single blog   *******/   
+.text-wrap,
+.single-blog-header {
+    width: 80%;
+    margin: 2.4rem auto;
+}
+
+.single-blog-header ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.single-blog-header .blue-bar {
+    margin-left: 0;
+}
+
+.single-blog-header li:nth-child(2) {
+    color: #cc621b;
+}
+
+.text-wrap img {
+    margin-right: 5%;
+    float: left;       
+}
+
+/****** Archives page ******/
+.archives-container {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.archives-column .blue-bar {
+    margin-left: 0;
+}
+
+.archives-column ul {
+    padding-left: 0;
+}
+
+.archives-column li {
+    list-style: none;
+}
+
+.archives-column li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: #2de1fc;
+    margin-right: 3rem;
+}
+
+/******* Category page ********/
+.single-blog-header h3 {
+    font-size: 2.4rem;
+    color: #414f76;
+}
+
+h2.category-title {
+    margin: 2.4rem 10% 0;
+    color: #cc621b;
+    font-size: 3.6rem
+}
+
+.category-heading-bar {
+    margin-left: 10%;
+}
+
+/****** 404 Page ******/
+.error-404-banner h1,
+.error-404-banner p {
+    color: #414f76;
+}
+
+/***** Search Results page *****/
+.search-results .single-blog-header {
+    width: 100%;
+}
+
+.search-results li {
+    color: #cc621b;
+}
+
+
+
+
+
+/************************** Responsive Design ***************************/
+@media(min-width:320px) {
+    /********* General structual ********/
+    .container {
+        min-width: 32rem;
+    }
+
+    .left-col,
+    .right-col {
+        flex-basis: 50%;
+    }
+    .left-col {
+        position: static;
+        height: auto;
+    }
+
+    /****  Home page   ****/
+    .banner .banner-image {
+        width: 100%;
+        height: 80vh;
+        background:url(/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/mobile-banner-Frame.jpg) no-repeat;
+    }
+    .banner .banner-content h1 {
+        width: 80%;
+        position: absolute;
+        top: 12%;
+    }
+    .banner-content p {
+        width: 80%;
+        color: #fafafa;
+        position: absolute;
+        bottom: 26%;
+        left: 7%;
+    }
+    button.schedule-appointment {
+        position: absolute;
+        bottom: 18%;
+        left: 5%;
+    }
+    .main-book-appointment {
+        height: 55rem;
+    }
+
+    .home-our-story,
+    .paws-blog-sub-container {
+        height: 80rem;
+    }
+    
+    .paws-blog-sub-container img {
+        padding-bottom: 5%;
+    }
+
+    /********   Contact Us Page   *********/
+    .contact-us-container,
+    .loving-paws-content-container {
+        flex-direction: column;
+    }
+
+    .contact-us-content-container {
+        width: 100%;
+        padding: 0 5%;
+    }
+    
+    /********   Loving Paws blog page   ********/
+    .loving-paws-blog-box {
+        width: 100%;
+        margin-top: 4.8rem;       
+    }
+    
+    .blog-rightside-bar {
+        width: 10%;
+        margin-top: 4.8rem;
+    }
+
+    .blog-bottom-bar {
+        width: 100%;
+        height: 1%;
+        bottom: -2%;
+    }
+
+    /******  Single blog   *******/
+    .text-wrap img {
+        margin-bottom: 2.4rem;
+    }
+    
+    .archives-column {
+        margin-top: 2.4rem;
+    }
+
+    /*****  404 page  *****/
+    .error-404-banner h1 {
+        position: absolute;
+        top: 40%;
+        left: 5%
+    }
+    .error-404-banner p {
+        position: absolute;
+        bottom: 10%;
+        left: 10%
+    }
+} 
+
+
+@media only screen and (min-width: 768px) {
+    /********* General structual ********/
+    .left-col,
+    .right-col {
+        flex-basis: 50%;
+    }
+    .left-col {
+        position: static;
+        height: auto;
+    }
+
+    .banner .banner-image {
+        width: 100%;
+        height: 50vh;
+        background:url(/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/960-puppy-home-banner-Frame--e1602105211376.jpg) no-repeat;
+    }
+    .banner .banner-content h1 {
+        width: 90%;
+        font-size: 4.8rem;     
+        padding: 7%;     
+        position: absolute;
+        top: 10%;
+    }
+    .banner-content p {
+        width: 70%;
+        color: #fafafa;
+        position: absolute;
+        bottom: 36%;
+        left: 7%
+    }
+    button.schedule-appointment {
+        width: 37.5rem;
+        height: 6rem;
+        position: absolute;
+        bottom: 25%;
+        left: 7%;
+    }
+
+    /****** Home page our story banner ********/
+    .home-our-story,
+    .home-paws-blog,
+    .paws-blog-sub-container {
+        flex-direction: column;
+    }
+    
+    .home-our-story {
+        height: auto
+    }
+
+    /********   Contact Us Page   *********/
+    .contact-us-container {
+        flex-direction: column;
+    }
+
+    /********  Loving Paws blog page  ********/
+    .loving-paws-blog-box {
+        margin-top: 6%;
+    }
+    .loving-paws-blog-box img {
+        margin: 5%;
+    }
+
+    /*****  404 page  *****/
+    .error-404-banner h1 {
+        font-size: 4.8rem;
+        position: absolute;
+        top: 65%;
+        left: 5%
+    }
+    .error-404-banner p {
+        position: absolute;
+        bottom: 10%;
+        left: 8%
+    }
+}
+
+
+@media(min-width:1200px) {
+    /********* General structual ********/
+    .our-story-banner h1,
+    .contact-us-banner h1,
+    .loving-paws-blog-header h1,
+    .categories-banner h1,
+    .archives-banner h1,
+    .error-404-banner h1,
+    .search-result-banner h1 {
+        font-size: 7.2rem;
+    }
+
+    .left-col,
+    .right-col {
+        flex-basis: 50%;
+    }
+    .left-col {
+        position: static;
+        height: auto;
+    }
+
+    .home-our-story,
+    .home-paws-blog,
+    .paws-blog-sub-container,
+    .loving-paws-content-container {
+        flex-direction: row;
+    }
+
+    /************** Home page banner **********/
+    .banner .banner-image {
+        width: 100%;
+        height: 80vh;
+        background:url(/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/puppy-home-banner-e1602106641436.jpg) no-repeat;
+    }
+    .banner-content {
+        width: 100%;
+        height: 90%;
+        color: #fafafa;
+        background-color: rgba(58, 51, 53, 0.5);
+        position: absolute;
+        bottom: 0;
+    }
+    .banner .banner-content h1 {
+        width: 60%;
+        font-size: 7.2rem;     
+        padding: 6%;     
+        position: absolute;
+        top: 0;
+    }
+    .banner-content p {
+        font-family: 'Oxygen', sans-serif;
+        width: 50%;
+        position: absolute;
+        bottom: 30%;
+        left: 6.5%
+    }
+    button.schedule-appointment {
+        width: 37.5rem;
+        height: 6rem;
+        position: absolute;
+        bottom: 10%;
+        left: 6.5%;
+    }
+
+    /*******   Home page content   ********/
+    .servives-top p {
+        margin-bottom: 4.8rem;
+    }
+
+    .services-middle {
+        display: flex;
+        margin-bottom: 2.4rem;
+
+    }
+
+    .services-bottom {
+        margin-bottom: 9.6rem;
+    }
+
+    .main-book-appointment {
+        height: 40rem;
+    }
+
+    .paws-blog-sub-container .right-col {
+        padding-left: 5%;
+    }
+
+    /******* Our story blog page *******/
+    .came-to-be,
+    .animals-we-care-for {
+        flex-direction: row;
+    }
+
+    /********   Contact Us Page   *********/
+    .contact-us-container {
+        flex-direction: row;
+    }
+    .contact-us-content-container {
+    width: 48%;
+    padding: 0 5%;
+    }
+    
+    /******** Loving Paws blog page *********/
+    .loving-paws-blog-box {
+        width: 25%;
+        margin-top: 6%;
+    }
+    
+    .loving-paws-blog-box img {
+        margin: 0;
+        margin-bottom: 2.4rem;
+    }
+
+    .blog-rightside-bar {
+        width: 20%;
+        margin-top: 5%;
+    }
+
+    .blog-bottom-bar {
+        width: 85%;
+        height: 5%;
+        margin-left: 5%;
+        bottom: -10%;
+    }
+    
+    /******  Single blog   *******/
+    .text-wrap img {
+        margin-bottom: 0;
+    }
+
+    /******* Archives Page *******/
+    .archives-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*****  404 page  *****/
+    .error-404-banner h1 {
+        position: absolute;
+        top: 70%;
+        left: 5%
+    }
+    .error-404-banner p {
+        font-size: 3.6rem;
+        left: 7%
+
+    }
+
+    .page-404-search-container {
+        width: 100%;
+        height: 40vh;
+        background-color: #fff5ea;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-404-search-container p {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 2.4rem;
+    }
+
+    input.form-control,
+    input#searchsubmit {
+        width: 50rem;
+        height: 4rem;
+        border: 3px solid #cc621b;
+        border-radius: 3px;
+    }
+
+    input#searchsubmit {
+        width: 10rem;
+        color: #fff;
+        background-color: #cc621b;
+    }
+
+}
+ 
+/******* End of Media query *********/
+
+/*** banner content ***/
+.banner {
+    width: 100%;
+    min-height: 60rem;
+    margin-bottom: 4.8rem;
+}
+
+/**** main content *****/
+.servives-top {
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.diet,
+.vaccinations,
+.dental,
+.wellness-care {
+    width: 30rem;
+    height: 37rem;
+    position: relative;
+    margin: 0 auto 2.4rem;
+}
+
+.diet {
+    background: url(http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/diet-nutrition-e1602979797626.jpg);
+}
+
+.vaccinations {
+    background: url(http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/vaccinations-e1602979828915.jpg);
+}
+
+.dental {
+    background: url(http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/dental-e1602979838817.jpg);
+}
+
+.wellness-care {
+    background: url(http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/exotic-care-e1602979860968.jpg);
+}
+
+.servives-top h2 {
+    color: #da8c58;
+}
+
+.services-middle h3 {
+    width: 100%;
+    background-color: rgba(255,255,255, 0.65);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.services-bottom {
+    text-align: center;
+}
+
+button.content-button {
+    width: 25rem;
+    height: 5rem; 
+    background: #cc621b;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.main-book-appointment {
+    text-align: center;
+    margin-top: 2.4rem;
+    width: 100%;
+    background: #414f76;
+    padding: 5rem 1.5rem 0;
+    color: #fff;
+}
+
+.main-book-appointment .blue-bar {
+    background-color: #2de1fc;
+}
+
+button.blue-book-button {
+    margin-top: 10rem;
+    width: 18rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: #2de1fc;
+}
+
+.home-our-story .blue-bar {
+    margin-left: 0;
+}
+
+.home-our-story .left-col button.content-button {
+    margin-top: 15%;
+}
+
+a:link,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555555;
+}
