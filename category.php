@@ -21,7 +21,7 @@ get_header();
                         
             <!-- display h1 heading by setting single_cat_title to true, it will display the category you clicked -->
             <div class="categories-banner">
-                <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/category-banner-e1603177082504.jpg" alt="category banner" />
+                <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/11/category-banner.jpg" alt="category banner" />
                 <div class="banner-shadow">
                     <h1 class="category-title">Category<?php //single_cat_title( '', true ); ?></h1>
                 </div>

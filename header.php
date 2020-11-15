@@ -43,7 +43,7 @@
 			</div> <!-- End of header-logo -->
          
          <div class="header-blue-bar"></div>
-         <div class="header-request-appointment">REQUEST APPOINTMENT</div>
+         <div class="header-request-appointment"><a href="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/contact-us/#appointment">REQUEST APPOINTMENT</a></div>
 
          <!-- Navigation -->
          <div class="header-nav">

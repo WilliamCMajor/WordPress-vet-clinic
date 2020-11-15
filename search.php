@@ -15,7 +15,7 @@ get_header();
     <?php if(have_posts()) : ?>
     
         <header class="search-result-banner">
-            <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/search-results-banner-e1603252431585.jpg" alt="search result banner">
+            <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/11/search-results-banner.jpg" alt="search result banner">
             <div class="banner-shadow">
                 <h1>SEARCH RESULTS</h1>
             </div>

@@ -3,7 +3,7 @@
 * This template is for displaying full blog article.
 *
 * @package Vet Clinic
-* @since 1.0.0
+* @since 2.0.0
 */
 //display header
 get_header();
@@ -37,7 +37,9 @@ get_header();
                 </div>
                 <div class="blog-bottom-bar"></div>
             </div>
-            <div class="blog-rightside-bar"></div>
+            <div class="blog-rightside-bar">
+                <?php get_template_part('template-parts/sidebar', 'primary'); ?>
+            </div>
         </div>
     <?php endwhile; ?>
 <!-- end while loop -->

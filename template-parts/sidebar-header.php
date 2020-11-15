@@ -2,7 +2,7 @@
 /* 
 *   This partial template will contain header widget area code
 *
-* @package design+code
+* @package Vet Clinic
 * @since 2.0
 */
 ?>

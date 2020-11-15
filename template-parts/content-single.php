@@ -4,7 +4,7 @@
 * @link https://developer.wordpress.org/theme/basics/template-hierarchy/
 *
 * @package Vet Clinic
-* @since 1.0.0
+* @since 2.0.0
 */
 ?>
 <article <?php post_class();?> id="post-<?php the_ID();?>" >
