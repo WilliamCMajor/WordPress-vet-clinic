@@ -13,7 +13,7 @@ function add_theme_scripts() {
     wp_enqueue_style( 'reset', get_template_directory_uri() . '/assets/css/reset.css', false, '1.0','all');
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     //scripts
-    //wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), 1.1, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
@@ -71,3 +71,30 @@ function theme_setup() {
 
 }
 add_action('after_setup_theme', 'theme_setup');
+
+/** REGISTER MENUS */
+//this menu function will allow for multiple menus :)
+function register_menus() { 
+    register_nav_menus(
+        array(
+            'main-menu' => 'Main Menu', //primary menu
+            'footer-menu' => 'Footer Menu',
+            //'footer-community' => 'Footer Menu - Community',
+            //'footer-resources' => 'Footer Menu - Resources',
+        )
+    ); 
+}
+add_action( 'init', 'register_menus' );
+
+/**  multiple plugin area **/
+$vetclinic_includes = array (
+    '/widgets.php',
+);
+
+foreach ($vetclinic_includes as $file) {
+    $filepath = locate_template( 'includes' . $file );
+    if( !$filepath ){
+        trigger_error(sprintf ('Error locating /includes%s for inclusion', $file), E_USER_ERROR);
+    }
+    require_once $filepath;
+}

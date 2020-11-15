@@ -12,7 +12,7 @@ get_header();
 ?>
 
 <div class="archives-banner">
-    <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/puppy-archives-banner-e1603245531692.jpg" alt="puppy archives banner">
+    <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/11/puppy-archives-banner.jpg" alt="puppy archives banner">
     <div class="banner-shadow">
         <h1><?php _e( 'Archives Page' ); ?></h1>
     </div>

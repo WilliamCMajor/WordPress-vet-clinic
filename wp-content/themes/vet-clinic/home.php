@@ -2,8 +2,8 @@
 /***
 * The template for displaying all blog posts.
 *
-* @package design+code demo
-* @since 1.0.0
+* @package Vet Clinic
+* @since 2.0.0
 */
 //display header
 get_header();
@@ -11,7 +11,7 @@ get_header();
 <article <?php post_class();?> id="post-<?php the_ID();?>" >
 
     <div class="loving-paws-blog-header">
-        <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/10/blog-banner-e1603156800546.jpg" alt="blog page banner" />
+        <img src="http://she8.dmitstudent.ca/dmit2032/vetclinic-siqing/wp-content/uploads/2020/11/blog-banner.jpg" alt="blog page banner" />
         <div class="banner-shadow">
             <h1>The Loving Paws Blog</h1>
         </div>
@@ -110,7 +110,9 @@ get_header();
             
             <div class="blog-bottom-bar"></div>
         </div>
-        <div class="blog-rightside-bar"></div>
+        <div class="blog-rightside-bar">
+            <?php get_template_part('template-parts/sidebar', 'primary'); ?>
+        </div>
     </div>
 <!-- //On this page specifically - this would be area to add pagination and a sidebar - out of the loop. -->
 </article>
