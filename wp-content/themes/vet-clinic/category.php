@@ -66,7 +66,9 @@ get_header();
                 <?php endwhile; ?>
                 <div class="blog-bottom-bar"></div>
             </div>
-            <div class="blog-rightside-bar"></div>
+            <div class="blog-rightside-bar">
+                <?php get_template_part('template-parts/sidebar', 'primary'); ?>
+            </div>
         </div>
         <?php else: ?>
             <?php get_template_part('template-parts/content', 'none'); ?>

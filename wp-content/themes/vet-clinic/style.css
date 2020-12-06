@@ -243,14 +243,8 @@ button.schedule-appointment {
 .blog-container {
     position: relative;
     width: 100%;
-    min-height: 120rem;
+    /* min-height: 120rem; */
     display: block;
-}
-
-.blog-content {
-    width: 80%;
-    /* position: absolute; */
-    /* left: 0; */
 }
 
 .blog-rightside-bar {
@@ -282,13 +276,15 @@ button.schedule-appointment {
 
 .blog-bottom-bar {
     background: #2de1fc;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .loving-paws-content-container {
-    width: 100%;
+    width: 95%;
+    margin-left: 3rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .loving-paws-blog-box {
@@ -332,6 +328,10 @@ button.schedule-appointment {
     margin: 2.4rem auto;
 }
 
+.text-wrap .entry-content {
+    min-height: 60rem;
+}
+
 .single-blog-header ul {
     list-style: none;
     padding-left: 0;
@@ -348,6 +348,10 @@ button.schedule-appointment {
 .text-wrap img {
     margin-right: 5%;
     float: left;       
+}
+
+.entry-content p {
+    margin-bottom: 2.4rem;
 }
 
 /****** Archives page ******/
@@ -405,7 +409,7 @@ h2.category-title {
     width: 100%;
 }
 
-.search-results li {
+.search-results .single-blog-header li {
     color: #cc621b;
 }
 
@@ -415,11 +419,7 @@ h2.category-title {
 
 /************************** Responsive Design ***************************/
 @media(min-width:320px) {
-    /********* General structual ********/
-/*     header.category-header {
-        margin-top: -5.5rem;
-    } */
- 
+    /********* General structual ********/ 
     .our-story-banner,
     .contact-us-banner,
     .loving-paws-blog-header,
@@ -451,7 +451,9 @@ h2.category-title {
         z-index: 1;
     }
     .custom-logo {
-        display: none;
+        /* display: none; */
+        visibility: hidden;
+        margin-top: 1.5rem;
     }
 
     .header-logo {
@@ -691,18 +693,26 @@ h2.category-title {
     }
     
     /********   Loving Paws blog page   ********/
+    .loving-paws-content-container {
+        margin-left: 0;
+    }
     .loving-paws-blog-box {
         width: 100%;
-        margin-top: 4.8rem;       
+        margin-top: 4.8rem;
     }
-
+    .loving-paws-blog-box img {
+        margin-left: 5%;
+    }
     .blog-rightside-bar {
         display: none;
     }
 
     /******  Single blog   *******/
+    .blog-content {
+        width: 100%;
+    }
     .text-wrap img {
-        margin-bottom: 2.4rem;
+        margin: 2.4rem 0;
     }
     
     .archives-column {
@@ -844,6 +854,9 @@ h2.category-title {
     }
 
     /********  Loving Paws blog page  ********/
+    .blog-content {
+        width: 72%;
+    }
     .loving-paws-blog-box {
         margin-top: 6%;
     }
@@ -901,6 +914,11 @@ h2.category-title {
     .blog-rightside-bar input#s {
         width: 53%;
     }
+
+    /***** Single Blog ******/
+    .entry-content img {
+        margin: 0 2.4rem 0 0;
+    }
     
     /****** Search bar & 404 page *****/
     input.form-control,
@@ -944,7 +962,7 @@ h2.category-title {
     }
 
     .custom-logo {
-        display: block;
+        visibility: visible;
         margin-top: 1rem;
         width: 40rem;
     }
@@ -1160,7 +1178,7 @@ h2.category-title {
     /******** Loving Paws blog page *********/
     .loving-paws-blog-box {
         width: 25%;
-        margin-top: 6%;
+        margin: 6% 4% 0;
     }
     
     .loving-paws-blog-box img {
@@ -1176,13 +1194,18 @@ h2.category-title {
     }
 
     .blog-bottom-bar {
-        width: 85%;
-        height: 5%;
-        margin-left: 5%;
-        bottom: -10%;
+        width: 84%;
+        height: 7rem;
+        margin: 4% 8%;
+        /* padding-top: 8rem; */
+        /* bottom: -6%; */
+        display: block;
     }
     
     /******  Single blog   *******/
+    .blog-content {
+        width: 80%;
+    }
     .text-wrap img {
         margin-bottom: 0;
     }

@@ -9,11 +9,11 @@
 ?>
 <article <?php post_class();?> id="post-<?php the_ID();?>" >
 <!-- entry header -->
-    <header>
+    <!-- <header> -->
         <!-- get the page title -->
         <?php //the_title('<h1 class="entry-title">', '</h1>'); ?>
         <?php //the_date(); ?>
-    </header>
+    <!-- </header> -->
     <div class="entry-content">
         <!--
         *displays the page/post content.
